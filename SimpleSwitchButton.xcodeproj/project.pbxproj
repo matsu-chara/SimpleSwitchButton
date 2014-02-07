@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BAD0AAA218A5458200207272 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD0AAA118A5458200207272 /* Foundation.framework */; };
+		BAD0AAA418A5458200207272 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD0AAA318A5458200207272 /* CoreGraphics.framework */; };
+		BAD0AAA618A5458200207272 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD0AAA518A5458200207272 /* UIKit.framework */; };
+		BAD0AAAC18A5458200207272 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAD0AAAA18A5458200207272 /* InfoPlist.strings */; };
+		BAD0AAAE18A5458200207272 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD0AAAD18A5458200207272 /* main.m */; };
+		BAD0AAB218A5458200207272 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD0AAB118A5458200207272 /* AppDelegate.m */; };
+		BAD0AAB518A5458200207272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD0AAB318A5458200207272 /* Main.storyboard */; };
+		BAD0AAB818A5458200207272 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD0AAB718A5458200207272 /* ViewController.m */; };
+		BAD0AABA18A5458200207272 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD0AAB918A5458200207272 /* Images.xcassets */; };
+		BAD0AAC118A5458200207272 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD0AAC018A5458200207272 /* XCTest.framework */; };
+		BAD0AAC218A5458200207272 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD0AAA118A5458200207272 /* Foundation.framework */; };
+		BAD0AAC318A5458200207272 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD0AAA518A5458200207272 /* UIKit.framework */; };
+		BAD0AACB18A5458200207272 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAD0AAC918A5458200207272 /* InfoPlist.strings */; };
+		BAD0AACD18A5458200207272 /* SimpleSwitchButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD0AACC18A5458200207272 /* SimpleSwitchButtonTests.m */; };
+		BAD0AAE018A545A400207272 /* mido_high.png in Resources */ = {isa = PBXBuildFile; fileRef = BAD0AAD718A545A400207272 /* mido_high.png */; };
+		BAD0AAE118A545A400207272 /* mido_off.png in Resources */ = {isa = PBXBuildFile; fileRef = BAD0AAD818A545A400207272 /* mido_off.png */; };
+		BAD0AAE218A545A400207272 /* mido_on.png in Resources */ = {isa = PBXBuildFile; fileRef = BAD0AAD918A545A400207272 /* mido_on.png */; };
+		BAD0AAE318A545A400207272 /* mura_high.png in Resources */ = {isa = PBXBuildFile; fileRef = BAD0AADA18A545A400207272 /* mura_high.png */; };
+		BAD0AAE418A545A400207272 /* mura_off.png in Resources */ = {isa = PBXBuildFile; fileRef = BAD0AADB18A545A400207272 /* mura_off.png */; };
+		BAD0AAE518A545A400207272 /* mura_on.png in Resources */ = {isa = PBXBuildFile; fileRef = BAD0AADC18A545A400207272 /* mura_on.png */; };
+		BAD0AAE618A545A400207272 /* ore_high.png in Resources */ = {isa = PBXBuildFile; fileRef = BAD0AADD18A545A400207272 /* ore_high.png */; };
+		BAD0AAE718A545A400207272 /* ore_off.png in Resources */ = {isa = PBXBuildFile; fileRef = BAD0AADE18A545A400207272 /* ore_off.png */; };
+		BAD0AAE818A545A400207272 /* ore_on.png in Resources */ = {isa = PBXBuildFile; fileRef = BAD0AADF18A545A400207272 /* ore_on.png */; };
+		BAD0AAEE18A545BE00207272 /* SimpleSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD0AAEB18A545BE00207272 /* SimpleSwitchButton.m */; };
+		BAD0AAEF18A545BE00207272 /* SimpleSwitchButtonCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD0AAED18A545BE00207272 /* SimpleSwitchButtonCollection.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAD0AAC418A5458200207272 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAD0AA9618A5458200207272 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAD0AA9D18A5458200207272;
+			remoteInfo = SimpleSwitchButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BAD0AA9E18A5458200207272 /* SimpleSwitchButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSwitchButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAD0AAA118A5458200207272 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BAD0AAA318A5458200207272 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BAD0AAA518A5458200207272 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BAD0AAA918A5458200207272 /* SimpleSwitchButton-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleSwitchButton-Info.plist"; sourceTree = "<group>"; };
+		BAD0AAAB18A5458200207272 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BAD0AAAD18A5458200207272 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BAD0AAAF18A5458200207272 /* SimpleSwitchButton-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleSwitchButton-Prefix.pch"; sourceTree = "<group>"; };
+		BAD0AAB018A5458200207272 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BAD0AAB118A5458200207272 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BAD0AAB418A5458200207272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAD0AAB618A5458200207272 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BAD0AAB718A5458200207272 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BAD0AAB918A5458200207272 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BAD0AABF18A5458200207272 /* SimpleSwitchButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleSwitchButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAD0AAC018A5458200207272 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BAD0AAC818A5458200207272 /* SimpleSwitchButtonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleSwitchButtonTests-Info.plist"; sourceTree = "<group>"; };
+		BAD0AACA18A5458200207272 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BAD0AACC18A5458200207272 /* SimpleSwitchButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleSwitchButtonTests.m; sourceTree = "<group>"; };
+		BAD0AAD718A545A400207272 /* mido_high.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mido_high.png; sourceTree = "<group>"; };
+		BAD0AAD818A545A400207272 /* mido_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mido_off.png; sourceTree = "<group>"; };
+		BAD0AAD918A545A400207272 /* mido_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mido_on.png; sourceTree = "<group>"; };
+		BAD0AADA18A545A400207272 /* mura_high.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mura_high.png; sourceTree = "<group>"; };
+		BAD0AADB18A545A400207272 /* mura_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mura_off.png; sourceTree = "<group>"; };
+		BAD0AADC18A545A400207272 /* mura_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mura_on.png; sourceTree = "<group>"; };
+		BAD0AADD18A545A400207272 /* ore_high.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ore_high.png; sourceTree = "<group>"; };
+		BAD0AADE18A545A400207272 /* ore_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ore_off.png; sourceTree = "<group>"; };
+		BAD0AADF18A545A400207272 /* ore_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ore_on.png; sourceTree = "<group>"; };
+		BAD0AAEA18A545BE00207272 /* SimpleSwitchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleSwitchButton.h; sourceTree = "<group>"; };
+		BAD0AAEB18A545BE00207272 /* SimpleSwitchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleSwitchButton.m; sourceTree = "<group>"; };
+		BAD0AAEC18A545BE00207272 /* SimpleSwitchButtonCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleSwitchButtonCollection.h; sourceTree = "<group>"; };
+		BAD0AAED18A545BE00207272 /* SimpleSwitchButtonCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleSwitchButtonCollection.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAD0AA9B18A5458200207272 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD0AAA418A5458200207272 /* CoreGraphics.framework in Frameworks */,
+				BAD0AAA618A5458200207272 /* UIKit.framework in Frameworks */,
+				BAD0AAA218A5458200207272 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD0AABC18A5458200207272 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD0AAC118A5458200207272 /* XCTest.framework in Frameworks */,
+				BAD0AAC318A5458200207272 /* UIKit.framework in Frameworks */,
+				BAD0AAC218A5458200207272 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAD0AA9518A5458200207272 = {
+			isa = PBXGroup;
+			children = (
+				BAD0AAA718A5458200207272 /* SimpleSwitchButton */,
+				BAD0AAC618A5458200207272 /* SimpleSwitchButtonTests */,
+				BAD0AAA018A5458200207272 /* Frameworks */,
+				BAD0AA9F18A5458200207272 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAD0AA9F18A5458200207272 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAD0AA9E18A5458200207272 /* SimpleSwitchButton.app */,
+				BAD0AABF18A5458200207272 /* SimpleSwitchButtonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAD0AAA018A5458200207272 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAD0AAA118A5458200207272 /* Foundation.framework */,
+				BAD0AAA318A5458200207272 /* CoreGraphics.framework */,
+				BAD0AAA518A5458200207272 /* UIKit.framework */,
+				BAD0AAC018A5458200207272 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAD0AAA718A5458200207272 /* SimpleSwitchButton */ = {
+			isa = PBXGroup;
+			children = (
+				BAD0AAB018A5458200207272 /* AppDelegate.h */,
+				BAD0AAB118A5458200207272 /* AppDelegate.m */,
+				BAD0AAB318A5458200207272 /* Main.storyboard */,
+				BAD0AAB618A5458200207272 /* ViewController.h */,
+				BAD0AAB718A5458200207272 /* ViewController.m */,
+				BAD0AAE918A545BE00207272 /* SimpleSwitchButton */,
+				BAD0AAD618A545A400207272 /* images */,
+				BAD0AAB918A5458200207272 /* Images.xcassets */,
+				BAD0AAA818A5458200207272 /* Supporting Files */,
+			);
+			path = SimpleSwitchButton;
+			sourceTree = "<group>";
+		};
+		BAD0AAA818A5458200207272 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAD0AAA918A5458200207272 /* SimpleSwitchButton-Info.plist */,
+				BAD0AAAA18A5458200207272 /* InfoPlist.strings */,
+				BAD0AAAD18A5458200207272 /* main.m */,
+				BAD0AAAF18A5458200207272 /* SimpleSwitchButton-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BAD0AAC618A5458200207272 /* SimpleSwitchButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				BAD0AACC18A5458200207272 /* SimpleSwitchButtonTests.m */,
+				BAD0AAC718A5458200207272 /* Supporting Files */,
+			);
+			path = SimpleSwitchButtonTests;
+			sourceTree = "<group>";
+		};
+		BAD0AAC718A5458200207272 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAD0AAC818A5458200207272 /* SimpleSwitchButtonTests-Info.plist */,
+				BAD0AAC918A5458200207272 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BAD0AAD618A545A400207272 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				BAD0AAD718A545A400207272 /* mido_high.png */,
+				BAD0AAD818A545A400207272 /* mido_off.png */,
+				BAD0AAD918A545A400207272 /* mido_on.png */,
+				BAD0AADA18A545A400207272 /* mura_high.png */,
+				BAD0AADB18A545A400207272 /* mura_off.png */,
+				BAD0AADC18A545A400207272 /* mura_on.png */,
+				BAD0AADD18A545A400207272 /* ore_high.png */,
+				BAD0AADE18A545A400207272 /* ore_off.png */,
+				BAD0AADF18A545A400207272 /* ore_on.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		BAD0AAE918A545BE00207272 /* SimpleSwitchButton */ = {
+			isa = PBXGroup;
+			children = (
+				BAD0AAEA18A545BE00207272 /* SimpleSwitchButton.h */,
+				BAD0AAEB18A545BE00207272 /* SimpleSwitchButton.m */,
+				BAD0AAEC18A545BE00207272 /* SimpleSwitchButtonCollection.h */,
+				BAD0AAED18A545BE00207272 /* SimpleSwitchButtonCollection.m */,
+			);
+			path = SimpleSwitchButton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAD0AA9D18A5458200207272 /* SimpleSwitchButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAD0AAD018A5458200207272 /* Build configuration list for PBXNativeTarget "SimpleSwitchButton" */;
+			buildPhases = (
+				BAD0AA9A18A5458200207272 /* Sources */,
+				BAD0AA9B18A5458200207272 /* Frameworks */,
+				BAD0AA9C18A5458200207272 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleSwitchButton;
+			productName = SimpleSwitchButton;
+			productReference = BAD0AA9E18A5458200207272 /* SimpleSwitchButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAD0AABE18A5458200207272 /* SimpleSwitchButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAD0AAD318A5458200207272 /* Build configuration list for PBXNativeTarget "SimpleSwitchButtonTests" */;
+			buildPhases = (
+				BAD0AABB18A5458200207272 /* Sources */,
+				BAD0AABC18A5458200207272 /* Frameworks */,
+				BAD0AABD18A5458200207272 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAD0AAC518A5458200207272 /* PBXTargetDependency */,
+			);
+			name = SimpleSwitchButtonTests;
+			productName = SimpleSwitchButtonTests;
+			productReference = BAD0AABF18A5458200207272 /* SimpleSwitchButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAD0AA9618A5458200207272 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = matsu_chara;
+				TargetAttributes = {
+					BAD0AABE18A5458200207272 = {
+						TestTargetID = BAD0AA9D18A5458200207272;
+					};
+				};
+			};
+			buildConfigurationList = BAD0AA9918A5458200207272 /* Build configuration list for PBXProject "SimpleSwitchButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAD0AA9518A5458200207272;
+			productRefGroup = BAD0AA9F18A5458200207272 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAD0AA9D18A5458200207272 /* SimpleSwitchButton */,
+				BAD0AABE18A5458200207272 /* SimpleSwitchButtonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAD0AA9C18A5458200207272 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD0AAE518A545A400207272 /* mura_on.png in Resources */,
+				BAD0AAE318A545A400207272 /* mura_high.png in Resources */,
+				BAD0AAE618A545A400207272 /* ore_high.png in Resources */,
+				BAD0AAE018A545A400207272 /* mido_high.png in Resources */,
+				BAD0AABA18A5458200207272 /* Images.xcassets in Resources */,
+				BAD0AAAC18A5458200207272 /* InfoPlist.strings in Resources */,
+				BAD0AAE218A545A400207272 /* mido_on.png in Resources */,
+				BAD0AAE818A545A400207272 /* ore_on.png in Resources */,
+				BAD0AAE718A545A400207272 /* ore_off.png in Resources */,
+				BAD0AAB518A5458200207272 /* Main.storyboard in Resources */,
+				BAD0AAE418A545A400207272 /* mura_off.png in Resources */,
+				BAD0AAE118A545A400207272 /* mido_off.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD0AABD18A5458200207272 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD0AACB18A5458200207272 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAD0AA9A18A5458200207272 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD0AAEF18A545BE00207272 /* SimpleSwitchButtonCollection.m in Sources */,
+				BAD0AAB818A5458200207272 /* ViewController.m in Sources */,
+				BAD0AAB218A5458200207272 /* AppDelegate.m in Sources */,
+				BAD0AAAE18A5458200207272 /* main.m in Sources */,
+				BAD0AAEE18A545BE00207272 /* SimpleSwitchButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD0AABB18A5458200207272 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD0AACD18A5458200207272 /* SimpleSwitchButtonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAD0AAC518A5458200207272 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAD0AA9D18A5458200207272 /* SimpleSwitchButton */;
+			targetProxy = BAD0AAC418A5458200207272 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BAD0AAAA18A5458200207272 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAD0AAAB18A5458200207272 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BAD0AAB318A5458200207272 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAD0AAB418A5458200207272 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BAD0AAC918A5458200207272 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAD0AACA18A5458200207272 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAD0AACE18A5458200207272 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BAD0AACF18A5458200207272 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAD0AAD118A5458200207272 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleSwitchButton/SimpleSwitchButton-Prefix.pch";
+				INFOPLIST_FILE = "SimpleSwitchButton/SimpleSwitchButton-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BAD0AAD218A5458200207272 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleSwitchButton/SimpleSwitchButton-Prefix.pch";
+				INFOPLIST_FILE = "SimpleSwitchButton/SimpleSwitchButton-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BAD0AAD418A5458200207272 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleSwitchButton.app/SimpleSwitchButton";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleSwitchButton/SimpleSwitchButton-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SimpleSwitchButtonTests/SimpleSwitchButtonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BAD0AAD518A5458200207272 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleSwitchButton.app/SimpleSwitchButton";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleSwitchButton/SimpleSwitchButton-Prefix.pch";
+				INFOPLIST_FILE = "SimpleSwitchButtonTests/SimpleSwitchButtonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAD0AA9918A5458200207272 /* Build configuration list for PBXProject "SimpleSwitchButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAD0AACE18A5458200207272 /* Debug */,
+				BAD0AACF18A5458200207272 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAD0AAD018A5458200207272 /* Build configuration list for PBXNativeTarget "SimpleSwitchButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAD0AAD118A5458200207272 /* Debug */,
+				BAD0AAD218A5458200207272 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BAD0AAD318A5458200207272 /* Build configuration list for PBXNativeTarget "SimpleSwitchButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAD0AAD418A5458200207272 /* Debug */,
+				BAD0AAD518A5458200207272 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAD0AA9618A5458200207272 /* Project object */;
+}
