@@ -10,7 +10,7 @@ On/Off切り替え可能なボタン(Switchのようなボタン)を作成でき
 
 のようなUIをつくることができます。
 
-![動作イメージ](https://github.com/matsu-chara/SimpleSwitchButton/blob/master/SimpleSwitchButton/images/capture.png)
+![動作イメージ](https://raw.github.com/matsu-chara/SimpleSwitchButton/master/SimpleSwitchButton/images/capture.png)
 
 ついでにAll ON/OFFメソッドなども用意しました。
 
