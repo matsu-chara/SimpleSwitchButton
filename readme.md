@@ -48,4 +48,4 @@ NSArray* onKeys = [simpleSwitchButtonCollection getKeysOfOnItem]);
 
 詳しくはデモを参照。  
 勢いで作ったのでちゃんとテストしてません。  
-むしろバグがあったら教えてください・・・。
+バグがあったら教えてください・・・。
