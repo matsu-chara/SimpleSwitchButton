@@ -2,39 +2,37 @@ SimpleSwitchButton
 ==================
 
 On/Off切り替え可能なボタン(Switchのようなボタン)を作成できます。
-それぞれの状態に対し、画像を設定することでボタンの状態を分かりやすく変更できます。
+On, Offそれぞれの状態に対し画像を設定することで、ボタンの状態を表現できます。
 
-複数のボタンをSwitchButtonCollectionで管理することによって、
+複数のボタンをSimpleSwitchButtonCollectionで管理することによって、
+
 * Switchボタンのうちどれか一つのみを選択できるラジオボタン
 * いくつでも選択可能なチェックボックス
 
 のようなUIをつくることができます。
-
-![動作イメージ](https://raw.github.com/matsu-chara/SimpleSwitchButton/master/SimpleSwitchButton/images/capture.png)
-
-ついでにAll ON/OFFメソッドなども用意しました。
+ついでにall On/Offメソッドやtoggleメソッドなども用意しました。
 
 
 ## インストール
 
 デモ内にある以下の4つをプロジェクトに追加
 
-* SwitchButtonCollection.h
-* SwitchButtonCollection.m
-* SwitchButton.h
-* SwitchButton.m
+* SimpleSwitchButtonCollection.h
+* SimpleSwitchButtonCollection.m
+* SimpleSwitchButton.h
+* SimpleSwitchButton.m
 
-使用したいファイルでSwitchButtonCollection.hをインポート
+使用したいファイルでSimpleSwitchButtonCollection.hをインポート
 
-以下のように、switchButtonCollectionを一つと、SwitchButtonを必要なだけ生成し、ビューに加える。
+以下のように、simpleSwitchButtonCollectionを一つと、SimpleSwitchButtonを必要なだけ生成し、ビューに加える。
 
 ```objective-c
-SwitchButtonCollection* switchButtonCollection = [[SwitchButtonCollection alloc] initWithSwitchButtonMode:asCheckBox];
+SimpleSwitchButtonCollection* simpleSwitchButtonCollection = [[SimpleSwitchButtonCollection alloc] initWithSimpleSwitchButtonMode:asCheckBox];
 
-SwitchButton *ore = [switchButtonCollection createSwitchButtonForKey:@"ore" ButtonFrame:CGRectMake(0, 50, 100, 100) OnImageName:@"ore_on.png" OffImageName:@"ore_off.png"];
+SimpleSwitchButton *ore = [simpleSwitchButtonCollection createSimpleSwitchButtonForKey:@"ore" ButtonFrame:CGRectMake(0, 50, 100, 100) OnImageName:@"ore_on.png" OffImageName:@"ore_off.png"];
 [self.view addSubview:ore];
 
-SwitchButton *mido = [switchButtonCollection createSwitchButtonForKey:@"mido" ButtonFrame:CGRectMake(100, 50, 100, 100) OnImageName:@"mido_on.png" OffImageName:@"mido_off.png"];
+SimpleSwitchButton *mido = [simpleSwitchButtonCollection createSimpleSwitchButtonForKey:@"mido" ButtonFrame:CGRectMake(100, 50, 100, 100) OnImageName:@"mido_on.png" OffImageName:@"mido_off.png"];
 [self.view addSubview:mido];
 
 ```
@@ -42,8 +40,8 @@ SwitchButton *mido = [switchButtonCollection createSwitchButtonForKey:@"mido" Bu
 ONになっているキーの数や、ONになっているキーを取得したい場合は以下のように
 
 ```objective-c
-int counter = [switchButtonCollection countOnItems];
-NSArray* onKeys = [switchButtonCollection getKeysOfOnItem]);
+int counter = [simpleSwitchButtonCollection countOnItems];
+NSArray* onKeys = [simpleSwitchButtonCollection getKeysOfOnItem]);
 ```
 
 
