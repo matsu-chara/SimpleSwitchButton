@@ -13,6 +13,10 @@ On, Offそれぞれの状態に対し画像を設定することで、ボタン�
 ついでにall On/Offメソッドやtoggleメソッドなども用意しました。
 
 
+動作イメージ:
+
+![動作イメージ](https://github.com/matsu-chara/SimpleSwitchButton/blob/master/SimpleSwitchButton/images/capture.png?raw=true)
+
 ## インストール
 
 デモ内にある以下の4つをプロジェクトに追加
