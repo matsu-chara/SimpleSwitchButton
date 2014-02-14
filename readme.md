@@ -30,7 +30,7 @@ On, Offそれぞれの状態に対し画像を設定することで、ボタン�
 
 以下のように、simpleSwitchButtonCollectionを一つと、SimpleSwitchButtonを必要なだけ生成し、ビューに加える。
 
-```objective-c
+```objc
 SimpleSwitchButtonCollection* simpleSwitchButtonCollection = [[SimpleSwitchButtonCollection alloc] initWithSimpleSwitchButtonMode:asCheckBox];
 
 SimpleSwitchButton *ore = [simpleSwitchButtonCollection createSimpleSwitchButtonForKey:@"ore" ButtonFrame:CGRectMake(0, 50, 100, 100) OnImageName:@"ore_on.png" OffImageName:@"ore_off.png"];
@@ -43,7 +43,7 @@ SimpleSwitchButton *mido = [simpleSwitchButtonCollection createSimpleSwitchButto
 
 ONになっているキーの数や、ONになっているキーを取得したい場合は以下のように
 
-```objective-c
+```objc
 int counter = [simpleSwitchButtonCollection countOnItems];
 NSArray* onKeys = [simpleSwitchButtonCollection getKeysOfOnItem]);
 ```
