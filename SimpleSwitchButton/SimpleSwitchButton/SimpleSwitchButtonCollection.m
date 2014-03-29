@@ -20,6 +20,26 @@
     return self;
 }
 
+-(void)setButtonType:(SimpleSwitchButtonType)newType {
+    type = newType;
+}
+
+-(void)registerSimpleSwitchButtonForKey:(NSString *)key SimpleSwitchButton:(SimpleSwitchButton *)simpleSwitchButton OnImageName:(NSString *)onImageName OffImageName:(NSString *)offImageName {
+
+    [simpleSwitchButton setKey:key OnImageName:onImageName OffImageName:offImageName];
+    simpleSwitchButton.delegate = self;
+    [simpleSwitchButton setType:type];
+    [simpleSwitchButtons setObject:simpleSwitchButton forKey:key];
+}
+
+-(void)registerSimpleSwitchButtonForKey:(NSString *)key SimpleSwitchButton:(SimpleSwitchButton *)simpleSwitchButton OnImageName:(NSString *)onImageName OnHighlitedImageName:(NSString *)onHighlitedImageName OffImageName:(NSString *)offImageName OffHighlitedImageName:(NSString *)offHighlitedImageName {
+
+    [simpleSwitchButton setKey:key OnImageName:onImageName OnHighlitedImageName:onHighlitedImageName OffImageName:offImageName OffHighlitedImageName:offHighlitedImageName];
+    simpleSwitchButton.delegate = self;
+    [simpleSwitchButton setType:type];
+    [simpleSwitchButtons setObject:simpleSwitchButton forKey:key];
+}
+
 // ボタンの追加
 -(SimpleSwitchButton *)createSimpleSwitchButtonForKey:(NSString *)key ButtonFrame:(CGRect)frame OnImageName:(NSString *)onImageName OffImageName:(NSString *)offImageName {
     SimpleSwitchButton * simpleSwitchButton = [[SimpleSwitchButton alloc] initWithFrame:frame ForKey:key OnImageName:onImageName OffImageName:offImageName];
@@ -135,8 +155,8 @@
 }
 
 -(void)setAllItemsToOn {
-    if(type == asRadioButton) {
-        NSLog(@"this method only available when type equals to asCheckBox ");
+    if(type != asCheckBox) {
+        NSLog(@"%s method only available when type equals to asCheckBox ", __FUNCTION__);
         return;
     }
 
@@ -157,8 +177,8 @@
 }
 
 -(void)toggleAllItems {
-    if(type == asRadioButton) {
-        NSLog(@"this method only available when type equals to asCheckBox ");
+    if(type != asCheckBox) {
+        NSLog(@"%s method only available when type equals to asCheckBox ", __FUNCTION__);
         return;
     }
 
@@ -170,13 +190,36 @@
 }
 
 -(void)setToOnForKey:(NSString *) key {
-    // ラジオボタンであれば、他が自動的にoffになるように、tapイベントを擬似的に発火させる。
     [self oneOfSimpleSwitchButtonTapped:key];
 }
 
 -(void)setToOffForKey:(NSString *) key {
     SimpleSwitchButton *simpleSwitchButton = simpleSwitchButtons[key];
     simpleSwitchButton.selected = NO;
+}
+
+-(void)setToOnForKeys:(NSArray *)keys setOthersOff:(BOOL)otherToOff{
+    if(type != asCheckBox && keys.count > 1) {
+        NSLog(@"%s method only available for multiple keys when type equals to asCheckBox ", __FUNCTION__);
+        return;
+    }
+    if(otherToOff){
+        [self setAllItemsToOff];
+    }
+    
+    for(NSString *key in keys) {
+        [self setToOnForKey:key];
+    }
+}
+
+-(void)setToOffForKeys:(NSArray *)keys setOthersOff:(BOOL)otherToOn{
+    if(otherToOn){
+        [self setAllItemsToOn];
+    }
+    
+    for(NSString *key in keys) {
+        [self setToOffForKey:key];
+    }
 }
 
 -(void)addTargetForKey:(NSString *)key action:(SEL)action forControlEvents:(UIControlEvents)controlEvents {
